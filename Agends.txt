@@ -1,0 +1,13 @@
+End to End Chicken Disease Classification
+
+1- Introduction & GitHup Repository Setup.
+2- Project Tamplate Creation.
+3- Project Setup & Requirements Installation.
+4- Logging, Utile , Excpetion Module.
+5- Project workflows.
+6- All Components Notebook Experiments.
+7- All components Modular Code Implementation.
+8- Trainig Pipleline.
+9- DVC (MLOps Tool)- For Pipline Tracking , Implementation.
+11- Docker.
+12- Final CI/CD(Continuous Integration and Continuous deployment or delivery ) Deoployment In AWS and Azure.
