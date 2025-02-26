@@ -12,19 +12,22 @@ class PrepareCallback:
 
     @property
     def _create_tb_callbacks(self):
-        # Create a unique timestamp
         timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
-        tb_running_log_dir = os.path.join(
-            self.config.tensorboard_root_log_dir,  # Base log directory
-            f"tb_logs_at_{timestamp}",  # Create a folder with timestamp
-        )
-        return tf.keras.callbacks.TensorBoard(log_dir=tb_running_log_dir)
+        # Use pathlib for directory construction
+        tb_log_dir = self.config.tensorboard_root_log_dir / \
+            f"tb_logs_at_{timestamp}"
+        # Create directory if it doesn't exist
+        tb_log_dir.mkdir(parents=True, exist_ok=True)
+        return tf.keras.callbacks.TensorBoard(log_dir=str(tb_log_dir))
 
     @property
     def _create_ckpt_callbacks(self):
+        # Ensure parent directory exists and convert Path to string
+        self.config.checkpoint_model_filepath.parent.mkdir(
+            parents=True, exist_ok=True)
         return tf.keras.callbacks.ModelCheckpoint(
-            filepath=self.config.checkpoint_model_filepath,  # Save model to this path
-            save_best_only=True  # Save only if it improves
+            filepath=str(self.config.checkpoint_model_filepath),
+            save_best_only=True
         )
 
     def get_tb_ckpt_callbacks(self):
