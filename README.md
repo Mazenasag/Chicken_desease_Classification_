@@ -1,5 +1,5 @@
 # 🐔 Chicken Disease Classification
-![Alt Text](static\PrediChick.PNG)
+![Alt Text](static/PrediChick.PNG)
 
 ## 📌 Problem Statement
 
