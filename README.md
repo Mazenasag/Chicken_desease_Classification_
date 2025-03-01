@@ -1,5 +1,4 @@
 # 🐔 Chicken Disease Classification
-
 ![Alt Text](static\PrediChick.PNG)
 
 ## 📌 Problem Statement
