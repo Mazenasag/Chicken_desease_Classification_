@@ -5,7 +5,7 @@
 
 This project focuses on classifying chicken health conditions into **Healthy** and **Coccidiosis** using deep learning. The objective is to fine-tune a **VGG16** model to achieve high classification accuracy, assisting poultry farmers in early disease detection.
 
-## 📊 Data Collection
+## 📊 Data Collection 
 
 **Dataset Source:** [Specify dataset source, e.g., Kaggle or a custom dataset]
 https://www.kaggle.com/datasets/allandclive/chicken-disease-1
