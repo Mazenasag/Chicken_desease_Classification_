@@ -11,7 +11,7 @@ This project focuses on classifying chicken health conditions into **Healthy** a
 https://www.kaggle.com/datasets/allandclive/chicken-disease-1
 
 -
-### Features Description:
+### Features Description :
 
 | Feature   | Description                                            |
 | --------- | ------------------------------------------------------ |
